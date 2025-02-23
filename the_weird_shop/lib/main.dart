@@ -1,11 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:the_weird_shop/bills_tab.dart';
 import 'package:the_weird_shop/credits_tab.dart';
 import 'package:the_weird_shop/receipts_tab.dart';
 import 'package:the_weird_shop/shop_tab.dart';
+import 'package:the_weird_shop/user_data.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(ChangeNotifierProvider(
+    create: (context) {
+      return UserData();
+    },
+    child: const MyApp(),
+  ));
 }
 
 class MyApp extends StatelessWidget {
