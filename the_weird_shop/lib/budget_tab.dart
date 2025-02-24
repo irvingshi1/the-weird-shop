@@ -14,6 +14,12 @@ class BudgetTab extends StatefulWidget {
 class _BudgetTab extends State<BudgetTab> {
   late TextEditingController _controller;
 
+  final AlertDialog budgetError = const AlertDialog(
+    title: Text('Invalid Input'),
+    content:
+    Text('The budget must be a nonnegative number.'),
+  );
+
   @override
   void initState() {
     super.initState();
@@ -54,11 +60,7 @@ class _BudgetTab extends State<BudgetTab> {
                       showDialog(
                         context: context,
                         builder: (BuildContext context) {
-                          return const AlertDialog(
-                            title: Text('Invalid Input'),
-                            content: Text(
-                                'The budget must be a number that\'s at least 0.'),
-                          );
+                          return budgetError;
                         },
                       );
                     }
@@ -66,11 +68,7 @@ class _BudgetTab extends State<BudgetTab> {
                     showDialog(
                       context: context,
                       builder: (BuildContext context) {
-                        return const AlertDialog(
-                          title: Text('Invalid Input'),
-                          content: Text(
-                              'The budget must be a number that\'s at least 0.'),
-                        );
+                        return budgetError;
                       },
                     );
                   }
