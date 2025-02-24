@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:the_weird_shop/bills_tab.dart';
+import 'package:the_weird_shop/budget_tab.dart';
 import 'package:the_weird_shop/credits_tab.dart';
 import 'package:the_weird_shop/receipts_tab.dart';
 import 'package:the_weird_shop/shop_tab.dart';
@@ -53,7 +53,7 @@ class _MyHomePageState extends State<MyHomePage> {
           bottom: const TabBar(
             tabs: <Tab>[
               Tab(
-                text: 'Bills',
+                text: 'Budget',
                 icon: Icon(
                   Icons.attach_money,
                 ),
@@ -79,13 +79,13 @@ class _MyHomePageState extends State<MyHomePage> {
             ],
           ),
         ),
-        body: SafeArea(
+        body: const SafeArea(
           child: TabBarView(
             children: <Widget>[
-              const BillsTab(),
-              const ShopTab(),
-              const ReceiptsTab(),
-              const CreditsTab(),
+              BudgetTab(),
+              ShopTab(),
+              ReceiptsTab(),
+              CreditsTab(),
             ],
           ),
         ),

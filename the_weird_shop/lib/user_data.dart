@@ -2,10 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:the_weird_shop/item.dart';
 
 class UserData extends ChangeNotifier {
-  double _money = double.infinity;
+  double _money = 0;
 
   void setMoney(double money) {
     _money = money;
+
+    notifyListeners();
   }
 
   void buy(Item item) {
