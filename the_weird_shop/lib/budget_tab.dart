@@ -16,8 +16,7 @@ class _BudgetTab extends State<BudgetTab> {
 
   final AlertDialog budgetError = const AlertDialog(
     title: Text('Invalid Input'),
-    content:
-    Text('The budget must be a nonnegative number.'),
+    content: Text('The budget must be a nonnegative number.'),
   );
 
   @override
@@ -49,7 +48,7 @@ class _BudgetTab extends State<BudgetTab> {
                   border: OutlineInputBorder(),
                 ),
               ),
-              FloatingActionButton(
+              ElevatedButton(
                 onPressed: () {
                   try {
                     final double money = double.parse(_controller.text);
@@ -73,7 +72,7 @@ class _BudgetTab extends State<BudgetTab> {
                     );
                   }
                 },
-                child: const Icon(Icons.attach_money),
+                child: const Text('Submit'),
               ),
             ],
           );

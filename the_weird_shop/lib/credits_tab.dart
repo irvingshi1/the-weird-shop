@@ -12,7 +12,7 @@ class CreditsTab extends StatefulWidget {
 class _CreditsTab extends State<CreditsTab> {
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
+    return const SingleChildScrollView(
       child: Column(
         children: <Widget>[
           Text('Credits'),
