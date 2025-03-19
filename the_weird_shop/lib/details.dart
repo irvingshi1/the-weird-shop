@@ -48,7 +48,8 @@ class _Details extends State<Details> {
               style: Theme.of(context).textTheme.headlineLarge,
             ),
             Text('Cost: ${entry.getCost()} per item.'),
-            const Text('Enter amount to purchase (input negative number to sell):'),
+            const Text(
+                'Enter amount to purchase (input negative number to sell):'),
             TextField(
               controller: _controller,
               decoration: const InputDecoration(
@@ -63,32 +64,44 @@ class _Details extends State<Details> {
                     try {
                       final double amount = double.parse(_controller.text);
 
-                      final double cost = amount * entry.getCost();
+                      final double totalCost = amount * entry.getCost();
 
                       final double money = userData.getMoney();
 
-                      if(amount < 0) {
-                        userData.setMoney(money - cost);
+                      if (amount == 0) {
+                        showDialog(
+                          context: context,
+                          builder: (BuildContext context) {
+                            return const AlertDialog(
+                              title: Text('Invalid Input'),
+                              content:
+                              Text('The amount needs to be nonzero.'),
+                            );
+                          },
+                        );
+                      } else if (amount < 0) {
+                        userData.setMoney(money - totalCost);
 
                         showDialog(
                           context: context,
                           builder: (BuildContext context) {
                             return AlertDialog(
                               title: const Text('Selling Succeeded'),
-                              content: Text('Sold ${-amount} ${entry.getName()}.'),
+                              content:
+                                  Text('Sold ${-amount} ${entry.getName()}.'),
                             );
                           },
                         );
-                      }
-                      else if (cost <= money) {
-                        userData.setMoney(money - amount * entry.getCost());
+                      } else if (totalCost <= money) {
+                        userData.setMoney(money - totalCost);
 
                         showDialog(
                           context: context,
                           builder: (BuildContext context) {
                             return AlertDialog(
                               title: const Text('Purchase Succeeded'),
-                              content: Text('Brought $amount ${entry.getName()}.'),
+                              content:
+                                  Text('Brought $amount ${entry.getName()}.'),
                             );
                           },
                         );

@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2facfa7-66b2-480d-94f0-b9a7368a7b20" name="Changes" comment="Started project.">
-      <change afterPath="$PROJECT_DIR$/the_weird_shop/lib/receipt.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/the_weird_shop/lib/bills_tab.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_weird_shop/lib/bills_tab.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/the_weird_shop/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_weird_shop/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/the_weird_shop/lib/user_data.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_weird_shop/lib/user_data.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/the_weird_shop/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/the_weird_shop/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/the_weird_shop/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/the_weird_shop/pubspec.yaml" afterDir="false" />
+    <list default="true" id="d2facfa7-66b2-480d-94f0-b9a7368a7b20" name="Changes" comment="Changed the button on the budget tab and allowed purchasing and selling of items.">
+      <change beforePath="$PROJECT_DIR$/.idea/other.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/the_weird_shop/lib/credits_tab.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_weird_shop/lib/credits_tab.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/the_weird_shop/lib/details.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_weird_shop/lib/details.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +93,47 @@
       <option name="project" value="LOCAL" />
       <updated>1738982989365</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="&#10;Partially fixed bills tab.">
+      <option name="closed" value="true" />
+      <created>1740324140021</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1740324140021</updated>
+    </task>
+    <task id="LOCAL-00003" summary="&#10;Partially fixed bills tab.">
+      <option name="closed" value="true" />
+      <created>1740324201221</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1740324201221</updated>
+    </task>
+    <task id="LOCAL-00004" summary="&#10;Partially fixed bills tab.">
+      <option name="closed" value="true" />
+      <created>1740357016184</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1740357016184</updated>
+    </task>
+    <task id="LOCAL-00005" summary="&#10;Renamed bills tab to budget tab. Budget tab is fully fixed.">
+      <option name="closed" value="true" />
+      <created>1740357786925</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1740357786925</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Changed the button on the budget tab and allowed purchasing and selling of items.">
+      <option name="closed" value="true" />
+      <created>1740889633790</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1740889633790</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -111,6 +149,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Started project." />
-    <option name="LAST_COMMIT_MESSAGE" value="Started project." />
+    <MESSAGE value="&#10;Partially fixed bills tab." />
+    <MESSAGE value="&#10;Renamed bills tab to budget tab. Budget tab is fully fixed." />
+    <MESSAGE value="Changed the button on the budget tab and allowed purchasing and selling of items." />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed the button on the budget tab and allowed purchasing and selling of items." />
   </component>
 </project>
