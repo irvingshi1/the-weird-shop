@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:the_weird_shop/details.dart';
-import 'package:the_weird_shop/item.dart';
+import 'package:the_weird_shop/cashier_screen.dart';
+import 'package:the_weird_shop/shelves_screen.dart';
 
 class ShopTab extends StatefulWidget {
   const ShopTab({super.key});
@@ -12,35 +12,39 @@ class ShopTab extends StatefulWidget {
 }
 
 class _ShopTab extends State<ShopTab> {
-  List<Item> itemList = <Item>[
-    Item('Iron', 0.01),
-    Item('Oganesson', 750000),
-  ];
-
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-      itemCount: itemList.length,
-      itemBuilder: (BuildContext context, int index) {
-        return ListTile(
-          title: Text(
-            itemList[index].getName(),
-          ),
-          onTap: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (BuildContext context) {
-                  return const Details();
-                },
-                settings: RouteSettings(
-                  arguments: itemList[index],
+    return SingleChildScrollView(
+      child: Column(
+        children: <Widget>[
+          ElevatedButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (BuildContext context) {
+                    return const ShelvesScreen();
+                  },
                 ),
-              ),
-            );
-          },
-        );
-      },
+              );
+            },
+            child: const Text('To Shelves'),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (BuildContext context) {
+                    return const CashierScreen();
+                  },
+                ),
+              );
+            },
+            child: const Text('To Cashier'),
+          ),
+        ],
+      ),
     );
   }
 }

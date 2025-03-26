@@ -67,7 +67,7 @@ class _MyHomePageState extends State<MyHomePage> {
               Tab(
                 text: 'Receipts',
                 icon: Icon(
-                  Icons.list,
+                  Icons.receipt,
                 ),
               ),
               Tab(

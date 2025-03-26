@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2facfa7-66b2-480d-94f0-b9a7368a7b20" name="Changes" comment="Changed the button on the budget tab and allowed purchasing and selling of items.">
-      <change beforePath="$PROJECT_DIR$/.idea/other.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
+    <list default="true" id="d2facfa7-66b2-480d-94f0-b9a7368a7b20" name="Changes" comment="Added credits.">
+      <change afterPath="$PROJECT_DIR$/the_weird_shop/lib/cashier_screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/the_weird_shop/lib/shelves_screen.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/the_weird_shop/lib/credits_tab.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_weird_shop/lib/credits_tab.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/the_weird_shop/lib/details.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_weird_shop/lib/details.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/the_weird_shop/lib/details.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_weird_shop/lib/item_details_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/the_weird_shop/lib/item.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_weird_shop/lib/item.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/the_weird_shop/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_weird_shop/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/the_weird_shop/lib/receipt.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_weird_shop/lib/receipt.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/the_weird_shop/lib/shop_tab.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_weird_shop/lib/shop_tab.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/the_weird_shop/lib/user_data.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_weird_shop/lib/user_data.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +138,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740889633790</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added credits.">
+      <option name="closed" value="true" />
+      <created>1742350752185</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1742350752185</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -152,6 +165,7 @@
     <MESSAGE value="&#10;Partially fixed bills tab." />
     <MESSAGE value="&#10;Renamed bills tab to budget tab. Budget tab is fully fixed." />
     <MESSAGE value="Changed the button on the budget tab and allowed purchasing and selling of items." />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed the button on the budget tab and allowed purchasing and selling of items." />
+    <MESSAGE value="Added credits." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added credits." />
   </component>
 </project>

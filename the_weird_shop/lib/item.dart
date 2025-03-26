@@ -3,6 +3,12 @@ class Item {
 
   final double _cost;
 
+  double _amount;
+
+  void setAmount(double amount) {
+    _amount = amount;
+  }
+
   String getName() {
     return _name;
   }
@@ -11,5 +17,14 @@ class Item {
     return _cost;
   }
 
-  Item(this._name, this._cost);
+  double getAmount() {
+    return _amount;
+  }
+
+  Item(this._name, this._cost, this._amount);
+
+  Item.copy(Item item)
+      : _name = item._name,
+        _cost = item._cost,
+        _amount = item._amount;
 }
