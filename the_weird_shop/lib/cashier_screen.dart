@@ -12,6 +12,22 @@ class CashierScreen extends StatefulWidget {
 }
 
 class _CashierScreen extends State<CashierScreen> {
+  late TextEditingController _controller;
+
+  @override
+  void initState() {
+    super.initState();
+
+    _controller = TextEditingController();
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,21 +35,30 @@ class _CashierScreen extends State<CashierScreen> {
       body: Consumer<UserData>(
         builder: (BuildContext context, UserData userData, Widget? child) {
           return SingleChildScrollView(
-            child: Column(
-              children: <Widget>[
-                ElevatedButton(
-                  onPressed: () {
-                    userData.resetItemList();
-                  },
-                  child: const Text('Confirm Purchase'),
-                ),
-                ElevatedButton(
-                  onPressed: () {
-                    userData.addToReceiptList();
-                  },
-                  child: const Text('Return Items'),
-                ),
-              ],
+            child: Center(
+              child: Column(
+                children: <Widget>[
+                  const Text('Enter receipt name:'),
+                  TextField(
+                    controller: _controller,
+                    decoration: const InputDecoration(
+                      border: OutlineInputBorder(),
+                    ),
+                  ),
+                  ElevatedButton(
+                    onPressed: () {
+                      userData.addToReceiptList(_controller.text);
+                    },
+                    child: const Text('Confirm Purchase'),
+                  ),
+                  ElevatedButton(
+                    onPressed: () {
+                      userData.returnItems();
+                    },
+                    child: const Text('Return Items'),
+                  ),
+                ],
+              ),
             ),
           );
         },

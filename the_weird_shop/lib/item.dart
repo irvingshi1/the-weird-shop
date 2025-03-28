@@ -5,6 +5,16 @@ class Item {
 
   double _amount;
 
+  static List<Item> copyItemList(List<Item> original) {
+    List<Item> clone = <Item>[];
+
+    for(Item item in original) {
+      clone.add(Item.copy(item));
+    }
+
+    return clone;
+  }
+
   void setAmount(double amount) {
     _amount = amount;
   }

@@ -38,7 +38,7 @@ class _ItemDetailsScreen extends State<ItemDetailsScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Details'),
+        title: const Text('Item Details'),
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -64,7 +64,54 @@ class _ItemDetailsScreen extends State<ItemDetailsScreen> {
                     try {
                       final double amount = double.parse(_controller.text);
 
-                      userData.buy(entry, amount, context);
+                      if (amount == 0) {
+                        showDialog(
+                          context: context,
+                          builder: (BuildContext context) {
+                            return const AlertDialog(
+                              title: Text('Invalid Input'),
+                              content: Text('The amount needs to be nonzero.'),
+                            );
+                          },
+                        );
+                      } else if (amount < 0) {
+                        userData.buy(entry, amount);
+
+                        showDialog(
+                          context: context,
+                          builder: (BuildContext context) {
+                            return AlertDialog(
+                              title: const Text('Selling Succeeded'),
+                              content:
+                                  Text('Sold ${-amount} ${entry.getName()}.'),
+                            );
+                          },
+                        );
+                      } else if (userData.getMoney() >=
+                          amount * entry.getCost()) {
+                        userData.buy(entry, amount);
+
+                        showDialog(
+                          context: context,
+                          builder: (BuildContext context) {
+                            return AlertDialog(
+                              title: const Text('Purchase Succeeded'),
+                              content:
+                                  Text('Brought $amount ${entry.getName()}.'),
+                            );
+                          },
+                        );
+                      } else {
+                        showDialog(
+                          context: context,
+                          builder: (BuildContext context) {
+                            return const AlertDialog(
+                              title: Text('Purchase Failed'),
+                              content: Text('Not enough money.'),
+                            );
+                          },
+                        );
+                      }
                     } catch (e) {
                       showDialog(
                         context: context,
