@@ -21,7 +21,7 @@ class UserData extends ChangeNotifier {
     Item('Oganesson', 75000000, 0),
     Item('Unicorn Powder', 250000000, 0),
     Item('Alien Alloy', 600000000, 0),
-  ];
+  ];e
 
   final List<Receipt> _receiptList = <Receipt>[];
 
