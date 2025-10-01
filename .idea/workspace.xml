@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2facfa7-66b2-480d-94f0-b9a7368a7b20" name="Changes" comment="Made a functioning receipt tab.">
-      <change beforePath="$PROJECT_DIR$/.idea/other.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
+    <list default="true" id="d2facfa7-66b2-480d-94f0-b9a7368a7b20" name="Changes" comment="Added new items.">
+      <change afterPath="$PROJECT_DIR$/README.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/the_weird_shop/lib/user_data.dart" beforeDir="false" afterPath="$PROJECT_DIR$/the_weird_shop/lib/user_data.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +155,31 @@
       <option name="project" value="LOCAL" />
       <updated>1743120545033</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Made a functioning receipt tab.">
+      <option name="closed" value="true" />
+      <created>1759284742629</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1759284742629</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Made a functioning receipt tab.">
+      <option name="closed" value="true" />
+      <created>1759284753710</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1759284753710</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Added new items.">
+      <option name="closed" value="true" />
+      <created>1759284777513</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1759284777513</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -178,6 +201,7 @@
     <MESSAGE value="Added credits." />
     <MESSAGE value="Reworked the shop tab." />
     <MESSAGE value="Made a functioning receipt tab." />
-    <option name="LAST_COMMIT_MESSAGE" value="Made a functioning receipt tab." />
+    <MESSAGE value="Added new items." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added new items." />
   </component>
 </project>
